@@ -11,7 +11,7 @@
 #define WHITE_MARGIN 0
 #define bound_LSA_LOW 0
 #define bound_LSA_HIGH 1000
-#define BLACK_BOUNDARY  820    // Boundary value to distinguish between black and white readings
+#define BLACK_BOUNDARY  900    // Boundary value to distinguish between black and white readings
 
 /*
  * weights given to respective line sensor
@@ -21,9 +21,9 @@ const int weights[5] = {-5, -3, 1, 3, 5};
 /*
  * Motor value boundts
  */
-int optimum_duty_cycle = 57;
-int lower_duty_cycle = 45;
-int higher_duty_cycle = 65;
+int optimum_duty_cycle = 25;
+int lower_duty_cycle = 0;
+int higher_duty_cycle = 60;
 float left_duty_cycle = 0, right_duty_cycle = 0;
 
 /*
